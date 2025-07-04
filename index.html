@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my frist git and github learning</title>
+    <title>Web Design Course</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome 아이콘 ব্যবহারের জন্য (ঐচ্ছিক) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    
+    <!-- ===== হেডার সেকশন ===== -->
+    <header>
+        <p class="logo">PraRoz</p>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Type to Search">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- ===== মূল কন্টেন্ট সেকশন ===== -->
+    <main>
+        <!-- বাম পাশের কন্টেন্ট -->
+        <div class="content-left">
+            <h1>Web Design &<br><span>Development</span><br>Course</h1>
+            <p>Web Design is a specialisation of the design stream. They also use HTML, CSS, WYSIWYG editing software, mark up validators etc., to create design elements.</p>
+            <button class="join-btn">JOIN US</button>
+        </div>
+
+        <!-- ডান পাশের লগইন ফর্ম -->
+        <div class="content-right">
+            <div class="login-form">
+                <h2>Login Here</h2>
+                <input type="email" placeholder="Enter Email Here">
+                <input type="password" placeholder="Enter Password Here">
+                <button class="login-btn">Login</button>
+                <p class="signup-link">Don't have an account? <a href="#">Sign up here</a></p>
+                <p class="social-login-text">Log in with</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>
