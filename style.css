@@ -1,0 +1,199 @@
+/* ===== বেসিক রিসেট এবং বডি স্টাইল ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1639408201938-58e75091f6bb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh; /* সম্পূর্ণ ভিউপোর্ট উচ্চতা */
+    color: white; /* ডিফল্ট টেক্সট কালার সাদা */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ===== হেডার স্টাইলিং ===== */
+header {
+    display: flex;
+    justify-content: space-between; /* আইটেমগুলোকে ফাঁকা জায়গা দিয়ে সমানভাবে ছড়ায় */
+    align-items: center; /* আইটেমগুলোকে উল্লম্বভাবে মাঝখানে রাখে */
+    padding: 20px 50px; /* উপরে-নিচে এবং ডানে-বামে প্যাডিং */
+    background-color: rgba(0, 0, 0, 0.2); /* হালকা কালো ব্যাকগ্রাউন্ড */
+}
+
+.logo {
+    font-size: 33px;
+    color: #ff7200; /* ছবির মতো কমলা রঙ */
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* মেন্যু আইটেমগুলোকে পাশাপাশি আনতে */
+}
+
+nav ul li {
+    padding: 0 20px; /* প্রতিটি মেন্যু আইটেমের মধ্যে ফাঁকা জায়গা */
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff7200; /* হোভার করলে রঙ পরিবর্তন হবে */
+}
+
+.search-box input {
+    padding: 5px 10px;
+    border: 1px solid #ff7200;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 5px 15px;
+    background-color: #ff7200;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ===== মূল কন্টেন্ট স্টাইলিং ===== */
+main {
+    display: flex;
+    justify-content: space-around; /* দুই পাশের কন্টেন্টকে ফাঁকা দিয়ে সাজানো */
+    align-items: center;
+    padding: 50px;
+    height: calc(100vh - 80px); /* হেডার বাদে বাকি উচ্চতা */
+}
+
+/* বাম পাশের কন্টেন্ট */
+.content-left {
+    width: 50%;
+}
+
+.content-left h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.content-left h1 span {
+    color: #ff7200; /* Development লেখার রঙ */
+}
+
+.content-left p {
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.join-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff7200;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-btn:hover {
+    background-color: #e66700;
+}
+
+/* ডান পাশের লগইন ফর্ম */
+.content-right {
+    width: 300px;
+}
+
+.login-form {
+    background-color: rgba(0, 0, 0, 0.7); /* গাঢ় এবং স্বচ্ছ ব্যাকগ্রাউন্ড */
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-form h2 {
+    background-color: white;
+    color: #ff7200;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin: -25px -25px 25px -25px; /* উপরের দিকে 붙িয়ে দিতে */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid white; /* শুধু নিচের বর্ডার */
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.login-form input::placeholder {
+    color: #ccc;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #ff7200;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e66700;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #ff7200;
+    font-weight: bold;
+}
+
+.social-login-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff7200;
+}
